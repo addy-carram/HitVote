@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace HitVote.Modals
 {
-    internal class Song
+    public class Song
     {
-       public int id_snng   {get;set;}
+       public int id_song   {get;set;}
        public string name_song   {get;set;}
        public int duration   {get;set;}
        public string image_path   {get;set;}
+        public ICollection<Form> Forms { get; set; } = new List<Form>();
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using HitVote.Data;
+using System.Configuration;
 using System.Data;
 using System.Windows;
 
@@ -9,6 +10,21 @@ namespace HitVote
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+
+            using var context = new AppDbContext();
+
+            if (context.Database.CanConnect())
+            {
+                MessageBox.Show("Conexiune reusita! ✅");
+            }
+            else
+            {
+                MessageBox.Show("Conexiune esuata! ❌");
+            }
+        }
     }
 
 }

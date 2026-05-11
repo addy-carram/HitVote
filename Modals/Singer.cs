@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HitVote.Modals
 {
-    internal class Singer
+    public class Singer
     {
         public  int id_singer     { get; set; }
         public string full_name      { get; set; }
@@ -14,5 +14,7 @@ namespace HitVote.Modals
         public  string email     { get; set; }
         public  string phone     { get; set; }
         public  string image_path     { get; set; }
+
+        public ICollection<Form> Forms { get; set; } = new List<Form>();
     }
 }

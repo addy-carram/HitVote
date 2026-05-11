@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HitVote.Modals
 {
-    internal class Person
+    public class Person
         
     {
         public int id_person { get; set; }
@@ -16,5 +16,7 @@ namespace HitVote.Modals
         public string p_password {get; set;}
         public string p_email    {get; set;}
         public int id_role { get; set; }
+        public Role_Person? Role { get; set; }
+        public ICollection<Vote> Votes { get; set; } = new List<Vote>();
     }   
 }

@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 namespace HitVote.Modals
 {
 
-    internal class Vote
+    public class Vote
     {
       public int id_vote   {get;set;}
       public int id_person   {get;set;}
       public int id_form   {get;set;}
       public int points   {get;set;}
+        public Person? Person { get; set; }
+        public Form? Form { get; set; }
     }
 }

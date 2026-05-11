@@ -11,12 +11,16 @@ using System.Windows.Documents;
 namespace HitVote.Modals
 {
  
-    internal class Form
+    public class Form
     {
        public int id_form   {get;set;}
        public int id_singer  {get;set;}
        public int id_song  {get;set;}
        public DateTime date_log  {get;set;}
        public string status  {get;set;}
+
+        public Singer? Singer { get; set; }
+        public Song? Song { get; set; }
+        public ICollection<Vote> Votes { get; set; } = new List<Vote>();
     }
 }

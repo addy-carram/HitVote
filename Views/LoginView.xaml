@@ -9,44 +9,37 @@
         " Width="1440"
         WindowStartupLocation="CenterScreen">
 
-    <Grid>
+    <Grid Background="{DynamicResource BackgroundColor}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1215"/>
         </Grid.ColumnDefinitions>
-        <Grid.Background>
-            <RadialGradientBrush GradientOrigin="0,0" 
-                         Center="0,0" 
-                         RadiusX="1" RadiusY="1
-                                 ">
-                <GradientStop Color="#FFF09200" Offset="0.245"/>
-                <GradientStop Color="#0A0A0A" Offset="1"/>
-                <GradientStop Color="#FF362204" Offset="0.79"/>
-            </RadialGradientBrush>
-        </Grid.Background>
-        <StackPanel x:Name="loginPanel" Margin="485,67,0,67" Background="#7F000000" HorizontalAlignment="Left" Width="400">
+        <StackPanel x:Name="loginPanel" Margin="485,67,0,67" Background="{DynamicResource BackgroundCard}" HorizontalAlignment="Left" Width="400">
             <Image Height="64" Width="64" Source="/Views/logo.png" UseLayoutRounding="True" Margin="0,44,0,0"/>
-            <StackPanel Width="212" Margin="40,30,40,20" Height="314">
+            <StackPanel Width="212" Margin="40,30,40,15" Height="314">
                 <StackPanel VerticalAlignment="Top" Margin="10,10,10,5">
-                    <Label Content="Name" Foreground="#FFFFE8C5" HorizontalAlignment="Left"/>
-                    <TextBox x:Name="inputName" TextWrapping="Wrap" Background="#26F09200" BorderBrush="#FFFFE8C5" Foreground="#4CFFE8C5" Height="40" TextChanged="TextBox_TextChanged" Margin="3,0,0,0" Padding="10,10,5,10" AutomationProperties.IsRequiredForForm="True"
+                    <Label Content="Name" Foreground="{DynamicResource TextPrimary}" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="inputName" TextWrapping="Wrap" Background="{DynamicResource Inputs}" BorderBrush="{DynamicResource BorderColor}" Foreground="#4CFFE8C5" Height="40" TextChanged="TextBox_TextChanged" Margin="3,0,0,0" Padding="10,10,5,10" AutomationProperties.IsRequiredForForm="True"
                              />
                 </StackPanel>
                 <StackPanel Margin="10,5,10,4.3">
-                    <Label Content="Password" Foreground="#FFFFE8C5" HorizontalAlignment="Left"/>
-                    <PasswordBox x:Name="inputPassword" Background="#26F09200" Height="40" AutomationProperties.IsRequiredForForm="True" Margin="0,0,0,-2"/>
+                    <Label Content="Password" Foreground="{DynamicResource TextPrimary}" HorizontalAlignment="Left"/>
+                    <PasswordBox x:Name="inputPassword" Background="{DynamicResource Inputs}" Height="40" AutomationProperties.IsRequiredForForm="True" Margin="0,0,0,-2" Padding="10,10,10,10" BorderBrush="{DynamicResource BorderColor}"/>
                 </StackPanel>
                 <StackPanel Margin="10,5,10,5">
-                    <Label Content="Role" Foreground="#FFFFE8C5" HorizontalAlignment="Left"/>
-                    <ComboBox x:Name="comboRole" Height="40" Padding="10,10,10,10">
+                    <Label Content="Role" Foreground="{DynamicResource TextPrimary}" HorizontalAlignment="Left"/>
+                    <ComboBox x:Name="comboRole" Height="40" Padding="10,10,10,10" Background="{x:Null}">
                         <ComboBoxItem Content="admin" Background="#FFDB8484"/>
                         <ComboBoxItem Content="user"/>
                     </ComboBox>
                 </StackPanel>
-                
-                <Button x:Name="enterLogin" Content="Enter" Background="#FFF09200" Padding="10,10,10,10" Margin="0,39,0,0"/>
+
+                <Button x:Name="enterLogin" Content="Enter" Background="{DynamicResource PrimaryColor}" Padding="10,10,10,10" Margin="0,39,0,0" Foreground="{DynamicResource TextPrimary}"/>
             </StackPanel>
-            <Label Content="Don't have an account? Sign in" Foreground="#FFFFE8C5" Margin="40,0,40,40" HorizontalAlignment="Center"/>
+            <Label Content="Don't have an account? Sign in" Foreground="{DynamicResource TextPrimary}" Margin="40,0,40,40" HorizontalAlignment="Center"/>
         </StackPanel>
+
+
+
 
     </Grid>
 </Window>

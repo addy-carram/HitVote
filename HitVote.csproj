@@ -10,10 +10,20 @@
 
   <ItemGroup>
     <None Remove="Views\logo.png" />
+    <None Remove="Views\MainPanel\ep_setting.png" />
+    <None Remove="Views\MainPanel\home.png" />
+    <None Remove="Views\MainPanel\logo.png" />
+    <None Remove="Views\MainPanel\music.png" />
+    <None Remove="Views\MainPanel\notification.png" />
+    <None Remove="Views\MainPanel\person.png" />
+    <None Remove="Views\MainPanel\report.png" />
+    <None Remove="Views\MainPanel\user1.jpg" />
+    <None Remove="Views\MainPanel\vote.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Services\" />
+    <Folder Include="Views\Login\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,6 +34,15 @@
 
   <ItemGroup>
     <Resource Include="Views\logo.png" />
+    <Resource Include="Views\MainPanel\ep_setting.png" />
+    <Resource Include="Views\MainPanel\home.png" />
+    <Resource Include="Views\MainPanel\logo.png" />
+    <Resource Include="Views\MainPanel\music.png" />
+    <Resource Include="Views\MainPanel\notification.png" />
+    <Resource Include="Views\MainPanel\person.png" />
+    <Resource Include="Views\MainPanel\report.png" />
+    <Resource Include="Views\MainPanel\user1.jpg" />
+    <Resource Include="Views\MainPanel\vote.png" />
   </ItemGroup>
 
 </Project>

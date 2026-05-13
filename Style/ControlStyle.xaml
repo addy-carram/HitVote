@@ -4,9 +4,9 @@
 
     <!-- TextBox -->
     <Style x:Key="InputBox" TargetType="TextBox">
-        <Setter Property="Background" Value="#2A2A2A"/>
-        <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
-        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+        <Setter Property="Background" Value="{DynamicResource Inputs}"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextPrimary}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderColor}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="Height" Value="40"/>
         <Setter Property="Padding" Value="10 0"/>
@@ -51,8 +51,8 @@
     <!-- PasswordBox -->
     <Style x:Key="InputPassword" TargetType="PasswordBox">
         <Setter Property="Background" Value="#2A2A2A"/>
-        <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
-        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextPrimary}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderColor}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="Height" Value="40"/>
         <Setter Property="Padding" Value="10 0"/>
@@ -76,7 +76,7 @@
 
     <!-- Buton principal -->
     <Style x:Key="PrimaryButton" TargetType="Button">
-        <Setter Property="Background" Value="{StaticResource PrimaryColor}"/>
+        <Setter Property="Background" Value="{DynamicResource PrimaryColor}"/>
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="FontWeight" Value="SemiBold"/>
@@ -108,11 +108,11 @@
     <!-- Buton secundar -->
     <Style x:Key="SecondaryButton" TargetType="Button">
         <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="{StaticResource PrimaryColor}"/>
+        <Setter Property="Foreground" Value="{DynamicResource PrimaryColor}"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Height" Value="40"/>
         <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="BorderBrush" Value="{StaticResource PrimaryColor}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource PrimaryColor}"/>
         <Setter Property="Cursor" Value="Hand"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -131,7 +131,7 @@
 
     <!-- Buton danger delete -->
     <Style x:Key="DangerButton" TargetType="Button">
-        <Setter Property="Background" Value="{StaticResource ErrorColor}"/>
+        <Setter Property="Background" Value="{DynamicResource PrimaryColor}"/>
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Height" Value="40"/>

@@ -149,5 +149,12 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
+    <!--Style of the playlist-card top -->
+    
+    <!--Style of the playlist-card song -->
+    
+    <!--Style of the playlist-card singer -->
+    
 
 </ResourceDictionary>

@@ -267,7 +267,7 @@ INSERT INTO Vote (id_person, id_form, points) VALUES
 (50, 25, 10);
 
 --poze pentru singers/ VOM TESTA LA aplicatie
-
+Select * from Singer
 
 UPDATE Singer SET image_path = '/Images/Singers/taylor_swift.jpg'     WHERE id_singer = 1;
 UPDATE Singer SET image_path = '/Images/Singers/ed_sheeran.jpg'       WHERE id_singer = 2;

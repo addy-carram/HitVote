@@ -12,39 +12,40 @@
             <StackPanel x:Name="elements_command" Margin="40,20,40,44">
                 <StackPanel x:Name="home" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
                     <Image Height="32" Width="32" Source="/Views/MainPanel/home.png"/>
-                    <Label Content="Home" HorizontalAlignment="Left" Foreground="{DynamicResource TextPrimary}"/>
+                    <Label Content="Home" HorizontalAlignment="Left" Style="{StaticResource nav}"/>
                 </StackPanel>
                 <StackPanel x:Name="vote" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
                     <Image Height="32" Width="32" Source="/Views/MainPanel/vote.png"/>
-                    <Label Content="Vote" HorizontalAlignment="Left" BorderBrush="{DynamicResource TextPrimary}" Foreground="{DynamicResource TextPrimary}"/>
+                    <Label Content="Vote" HorizontalAlignment="Left" Style="{StaticResource nav}"/>
                 </StackPanel>
                 <StackPanel x:Name="person" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
                     <Image Height="32" Width="32" Source="/Views/MainPanel/person.png"/>
-                    <Label Content="Person" HorizontalAlignment="Left" Foreground="{DynamicResource TextPrimary}"/>
+                    <Label Content="Person" Style="{StaticResource nav}"/>
                 </StackPanel>
                 <StackPanel x:Name="music" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
                     <Image Height="32" Width="32" Source="/Views/MainPanel/music.png"/>
-                    <Label Content="Music" HorizontalAlignment="Left" Foreground="{DynamicResource TextPrimary}"/>
+                    <Label Content="Music" HorizontalAlignment="Left" Style="{StaticResource nav}"/>
                 </StackPanel>
                 <StackPanel x:Name="raport" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
                     <Image Height="32" Width="32" Source="/Views/MainPanel/report.png"/>
-                    <Label Content="Raport" HorizontalAlignment="Left" Foreground="{DynamicResource TextPrimary}"/>
+                    <Label Content="Raport" HorizontalAlignment="Left" Style="{StaticResource nav}"/>
                 </StackPanel>
             </StackPanel>
         </StackPanel>
         <StackPanel x:Name="nav_bar" VerticalAlignment="Top" Height="100" Width="1140" Orientation="Horizontal" HorizontalAlignment="Right">
             <TextBox Style="{StaticResource InputBox}" TextWrapping="Wrap" Text="TextBox" Width="240" VerticalAlignment="Center" Margin="100,0,300,0"/>
-            <StackPanel x:Name="user_elemets" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="250,0,0,0">
+            <StackPanel x:Name="user_elemets" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="200.4,0,0,0">
                 <StackPanel x:Name="notification" Orientation="Horizontal">
                     <Image Height="32" Width="32" Source="/Views/MainPanel/ep_setting.png"/>
                     <Image Height="32" Width="32" Source="/Views/MainPanel/notification.png" Margin="10,0,0,0"/>
                 </StackPanel>
                 <StackPanel x:Name="___account_" Orientation="Horizontal" Height="100" Margin="30,0,0,0">
                     <Image Height="48" Width="48" Source="/Views/MainPanel/user1.jpg"/>
-                    <Label Content="Account" Foreground="{DynamicResource TextPrimary}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                    <Label Content="Account" Style="{StaticResource nav}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0"/>
                 </StackPanel>
             </StackPanel>
         </StackPanel>
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Height="485" Width="1135" Margin="301,129,0,0"/>
 
     </Grid>
 </Window>

@@ -10,7 +10,7 @@ namespace HitVote.Data
 {
     public class AppDbContext : DbContext
     {
-        // Cate un DbSet pentru fiecare tabel
+        // Cate un DbSet for each table
         public DbSet<Role_Person> Role_Person { get; set; }
         public DbSet<Person> Person { get; set; }
         public DbSet<Singer> Singer { get; set; }

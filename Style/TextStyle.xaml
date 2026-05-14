@@ -5,29 +5,29 @@
     <Style x:Key="H1" TargetType="TextBlock">
         <Setter Property="FontSize" Value="32"/>
         <Setter Property="FontWeight" Value="Bold"/>
-        <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextPrimary}"/>
     </Style>
 
     <Style x:Key="H2" TargetType="TextBlock">
         <Setter Property="FontSize" Value="24"/>
         <Setter Property="FontWeight" Value="SemiBold"/>
-        <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextPrimary}"/>
     </Style>
     <Style x:Key="H3" TargetType="Label">
         <Setter Property="FontSize" Value="25"/>
-        <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextPrimary}"/>
         <Setter Property="Margin" Value="0 0 0 0"/>
     </Style>
 
     <!--paragraph style-->
     <Style x:Key="paragraph" TargetType="Label">
         <Setter Property="FontSize" Value="18"/>
-        <Setter Property="Foreground" Value="{StaticResource TextParagraph }"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextParagraph }"/>
     </Style>
 
     <Style x:Key="nav" TargetType="Label">
         <Setter Property="FontSize" Value="22"/>
-        <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextPrimary}"/>
     </Style>
 
     

@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="HitVote.Views.MainPanel.Home.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controls="clr-namespace:HitVote.Controls"
+             xmlns:vm="clr-namespace:HitVote.ViewModels">
+
+    <UserControl.DataContext>
+        <vm:HomeViewModel/>
+    </UserControl.DataContext>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="20">
+
+            <!-- TOP SONG CARD -->
+            <TextBlock Text="Top Song" 
+                       Foreground="{DynamicResource TextPrimary}"
+                       FontSize="18" FontWeight="Bold"
+                       Margin="0,0,0,10"/>
+
+            <controls:SongCard 
+                Title="{Binding TopSong.name_song}"
+                Artist="{Binding TopSong.image_path}"
+                ImageSource="{Binding TopSong.image_path}"/>
+
+            <!-- SONGS LIST -->
+            <TextBlock Text="All Songs" 
+                       Foreground="{DynamicResource TextPrimary}"
+                       FontSize="18" FontWeight="Bold"
+                       Margin="0,20,0,10"/>
+
+            <ItemsControl ItemsSource="{Binding Songs}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <controls:SongCard
+                            Title="{Binding name_song}"
+                            Artist="{Binding image_path}"
+                            ImageSource="{Binding image_path}"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <!-- SINGERS LIST -->
+            <TextBlock Text="Artists" 
+                       Foreground="{DynamicResource TextPrimary}"
+                       FontSize="18" FontWeight="Bold"
+                       Margin="0,20,0,10"/>
+
+            <ItemsControl ItemsSource="{Binding Singers}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <controls:SingerCard
+                            SingerName="{Binding full_name}"
+                            ImageSource="{Binding image_path}"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

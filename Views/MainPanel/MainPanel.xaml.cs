@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HitVote.Views.MainPanel.Home;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,11 @@ namespace HitVote.Views.MainPanel
         public MainPanel()
         {
             InitializeComponent();
+            MainContent.Content = new HomeView();
+        }
+        private void Home_Click(object sender, MouseButtonEventArgs e)
+        {
+            MainContent.Content = new HomeView();
         }
     }
 }

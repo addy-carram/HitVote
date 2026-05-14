@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="HitVote.Controls.SongCard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Name="root">
+
+    <Border 
+            CornerRadius="0" Margin="0,0,0,10" Padding="10">
+        <StackPanel>
+
+            <!-- Image -->
+            <Border Width="600" Height="200" CornerRadius="6" ClipToBounds="True">
+                <Image Source="{Binding ImageSource, ElementName=root}" 
+                       Stretch="UniformToFill"/>
+            </Border>
+<Button Content="▶" 
+        Width="36" Height="36"
+        Style="{DynamicResource PrimaryButton}" Margin="0,-80,30,0" HorizontalAlignment="Right"/>
+            <!-- Title + Artist -->
+            <StackPanel VerticalAlignment="Center" Margin="12,0,0,0">
+                <TextBlock Text="{Binding Title, ElementName=root}"
+                           Foreground="{DynamicResource TextPrimary}"
+                           FontSize="14" FontWeight="SemiBold"/>
+                <TextBlock Text="{Binding Artist, ElementName=root}"
+                           Foreground="{DynamicResource PrimaryColor}"
+                           FontSize="12"/>
+            </StackPanel>
+            
+
+            <!-- Play Button -->
+
+        </StackPanel>
+    </Border>
+</UserControl>

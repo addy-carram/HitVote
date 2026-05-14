@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace HitVote.Views.MainPanel
+namespace HitVote.Views.Login
 {
     /// <summary>
-    /// Interaction logic for uc_dashboard.xaml
+    /// Interaction logic for LoginView.xaml
     /// </summary>
-    public partial class uc_dashboard : UserControl
+    public partial class LoginView : UserControl
     {
-        public uc_dashboard()
+        public LoginView()
         {
             InitializeComponent();
         }

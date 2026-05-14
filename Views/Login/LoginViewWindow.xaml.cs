@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace HitVote.Views
+namespace HitVote.Views.Login
 {
     /// <summary>
-    /// Interaction logic for RegisterView.xaml
+    /// Interaction logic for LoginViewWindow.xaml
     /// </summary>
-    public partial class RegisterView : UserControl
+    public partial class LoginViewWindow : Window
     {
-        public RegisterView()
+        public LoginViewWindow()
         {
             InitializeComponent();
         }

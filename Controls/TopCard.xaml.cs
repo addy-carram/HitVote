@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace HitVote.Views
+namespace HitVote.Controls
 {
     /// <summary>
-    /// Interaction logic for LoginViewWindow.xaml
+    /// Interaction logic for TopCard.xaml
     /// </summary>
-    public partial class LoginViewWindow : Window
+    public partial class TopCard : UserControl
     {
-        public LoginViewWindow()
+        public TopCard()
         {
             InitializeComponent();
         }

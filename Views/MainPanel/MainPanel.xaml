@@ -10,7 +10,8 @@
         <StackPanel x:Name="panelElemets" Width="300" HorizontalAlignment="Left" Background="{DynamicResource BackgroundCard}">
             <Image Height="64" Width="64" Source="/Views/MainPanel/logo.png" Margin="40,44,40,0" HorizontalAlignment="Left"/>
             <StackPanel x:Name="elements_command" Margin="40,20,40,44">
-                <StackPanel x:Name="home" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
+                <StackPanel x:Name="home" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10"
+                            MouseLeftButtonDown="Home_Click" Cursor="Hand">
                     <Image Height="32" Width="32" Source="/Views/MainPanel/home.png"/>
                     <Label Content="Home" HorizontalAlignment="Left" Style="{StaticResource nav}"/>
                 </StackPanel>
@@ -45,7 +46,12 @@
                 </StackPanel>
             </StackPanel>
         </StackPanel>
-        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Height="485" Width="1135" Margin="301,129,0,0"/>
-
+        <Grid HorizontalAlignment="Right" VerticalAlignment="Top" Height="485" Width="1135" Margin="0,129,0,0"/>
+       
+        <ContentControl x:Name="MainContent" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Height="600" Width="1135" 
+                Margin="300,100,0,0"/>
     </Grid>
 </Window>

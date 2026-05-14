@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Documents;
 
-namespace HitVote.Modals
+namespace HitVote.Models
 {
  
     public class Form

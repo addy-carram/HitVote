@@ -28,11 +28,14 @@ namespace HitVote.ViewModels
         private void LoadData()
         {
             var songList = _songService.GetAllSongs();
-            Songs = new ObservableCollection<Song>(songList);
-            TopSong = _songService.GetTopSong();
+            TopSong = songList.FirstOrDefault();
+
+            var song3list = _songService.Get3Songs();
+            Songs = new ObservableCollection<Song>(songList.Skip(1));
 
             var singerList = _singerService.GetAllSingers();
             Singers = new ObservableCollection<Singer>(singerList);
         }
+
     }
 }

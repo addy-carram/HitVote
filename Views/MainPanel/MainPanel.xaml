@@ -8,30 +8,42 @@
         Title="MainPanel" Height="700" Width="1440">
     <Grid Background="{DynamicResource BackgroundColor}">
         <StackPanel x:Name="panelElemets" Width="300" HorizontalAlignment="Left" Background="{DynamicResource BackgroundCard}">
-            <Image Height="64" Width="64" Source="/Views/MainPanel/logo.png" Margin="40,44,40,0" HorizontalAlignment="Left"/>
-            <StackPanel x:Name="elements_command" Margin="40,20,40,44">
-                <StackPanel x:Name="home" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10"
-                            MouseLeftButtonDown="Home_Click" Cursor="Hand">
+            <Image Height="64" Width="64" Source="/Views/MainPanel/logo.png" Margin="40,44,40,40" HorizontalAlignment="Left"/>
+            <Button x:Name="home" Background="{x:Null}" Padding="40,5,5,5" Height="81" HorizontalContentAlignment="Left" BorderBrush="{x:Null}"
+                     MouseLeftButtonDown="Home_Click" Cursor="Hand">
+                <StackPanel x:Name="home_context" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
                     <Image Height="32" Width="32" Source="/Views/MainPanel/home.png"/>
-                    <Label Content="Home" HorizontalAlignment="Left" Style="{StaticResource nav}"/>
+                    <Label Content="Home" HorizontalAlignment="Left" Style="{StaticResource nav}" Margin="10,0,0,0"/>
+
                 </StackPanel>
-                <StackPanel x:Name="vote" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
+            </Button>
+            <Button x:Name="vote" Background="{x:Null}" Padding="40,5,5,5" Height="81" HorizontalContentAlignment="Left" BorderBrush="{x:Null}">
+                <StackPanel x:Name="vote_context" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
                     <Image Height="32" Width="32" Source="/Views/MainPanel/vote.png"/>
-                    <Label Content="Vote" HorizontalAlignment="Left" Style="{StaticResource nav}"/>
+                    <Label Content="Vote" HorizontalAlignment="Left" Style="{StaticResource nav}" Margin="10,0,0,0"/>
+
                 </StackPanel>
-                <StackPanel x:Name="person" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
+            </Button>
+            <Button x:Name="person" Background="{x:Null}" Padding="40,5,5,5" Height="81" HorizontalContentAlignment="Left" BorderBrush="{x:Null}">
+                <StackPanel x:Name="person_context" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
                     <Image Height="32" Width="32" Source="/Views/MainPanel/person.png"/>
-                    <Label Content="Person" Style="{StaticResource nav}"/>
+                    <Label Content="Person" HorizontalAlignment="Left" Style="{StaticResource nav}" Margin="10,0,0,0"/>
+
                 </StackPanel>
-                <StackPanel x:Name="music" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
+            </Button>
+            <Button x:Name="music" Background="{x:Null}" Padding="40,5,5,5" Height="81" HorizontalContentAlignment="Left" BorderBrush="{x:Null}">
+                <StackPanel x:Name="music_context" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
                     <Image Height="32" Width="32" Source="/Views/MainPanel/music.png"/>
-                    <Label Content="Music" HorizontalAlignment="Left" Style="{StaticResource nav}"/>
+                    <Label Content="Music" HorizontalAlignment="Left" Style="{StaticResource nav}" Margin="10,0,0,0"/>
+
                 </StackPanel>
-                <StackPanel x:Name="raport" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
+            </Button>
+            <Button x:Name="raport" Background="{x:Null}" Padding="40,5,5,5" Height="81" HorizontalContentAlignment="Left" BorderBrush="{x:Null}">
+                <StackPanel x:Name="raport_context" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
                     <Image Height="32" Width="32" Source="/Views/MainPanel/report.png"/>
-                    <Label Content="Raport" HorizontalAlignment="Left" Style="{StaticResource nav}"/>
+                    <Label Content="Raport" HorizontalAlignment="Left" Style="{StaticResource nav}" Margin="10,0,0,0"/>
                 </StackPanel>
-            </StackPanel>
+            </Button>
         </StackPanel>
         <StackPanel x:Name="nav_bar" VerticalAlignment="Top" Height="100" Width="1140" Orientation="Horizontal" HorizontalAlignment="Right">
             <TextBox Style="{StaticResource InputBox}" TextWrapping="Wrap" Text="TextBox" Width="240" VerticalAlignment="Center" Margin="100,0,300,0"/>
@@ -47,7 +59,7 @@
             </StackPanel>
         </StackPanel>
         <Grid HorizontalAlignment="Right" VerticalAlignment="Top" Height="485" Width="1135" Margin="0,129,0,0"/>
-       
+
         <ContentControl x:Name="MainContent" 
                 HorizontalAlignment="Left" 
                 VerticalAlignment="Top" 

@@ -13,5 +13,7 @@ namespace HitVote.Services
 
         public Song GetTopSong() =>
             _db.Song.FirstOrDefault();
+        public List<Song> Get3Songs()=>
+            _db.Song.ToList();
     }
 }

@@ -24,34 +24,9 @@ namespace HitVote.Views.MainPanel.Home
         public HomeView()
         {
             InitializeComponent();
-            LoadSongs();
+           
         }
 
-        private void LoadSongs()
-        {
-            var songs = SongRepository.GetAll(); // your DB call
-
-            // Convert byte[] image to ImageSource
-            var items = songs.Select(s => new
-            {
-                s.Title,
-                s.Artist,
-                ImageSource = ByteToImage(s.ImageData)
-            }).ToList();
-
-            SongList.ItemsSource = items;
-        }
-
-        private ImageSource ByteToImage(byte[] data)
-        {
-            if (data == null) return null;
-            var img = new BitmapImage();
-            using var ms = new MemoryStream(data);
-            img.BeginInit();
-            img.CacheOption = BitmapCacheOption.OnLoad;
-            img.StreamSource = ms;
-            img.EndInit();
-            return img;
-        }
+        
     }
 }

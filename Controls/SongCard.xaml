@@ -8,21 +8,21 @@
         <StackPanel>
 
             <!-- Image -->
-            <Border Width="600" Height="200" CornerRadius="6" ClipToBounds="True">
+            <Border CornerRadius="6" ClipToBounds="True">
                 <Image Source="{Binding ImageSource, ElementName=root}" 
-                       Stretch="UniformToFill"/>
+                       Stretch="Fill" Width="400" Height="400" HorizontalAlignment="Left"/>
             </Border>
-<Button Content="▶" 
-        Width="36" Height="36"
-        Style="{DynamicResource PrimaryButton}" Margin="0,-80,30,0" HorizontalAlignment="Right"/>
+            <Button Content="▶" 
+            Width="36" Height="36"
+            Style="{DynamicResource PrimaryButton}" Margin="30,-80,30,0" HorizontalAlignment="Left"/>
             <!-- Title + Artist -->
-            <StackPanel VerticalAlignment="Center" Margin="12,0,0,0">
+            <StackPanel VerticalAlignment="Center" Margin="12,20,0,0" HorizontalAlignment="Left">
                 <TextBlock Text="{Binding Title, ElementName=root}"
                            Foreground="{DynamicResource TextPrimary}"
-                           FontSize="14" FontWeight="SemiBold"/>
+                           FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Left"/>
                 <TextBlock Text="{Binding Artist, ElementName=root}"
                            Foreground="{DynamicResource PrimaryColor}"
-                           FontSize="12"/>
+                           FontSize="12" HorizontalAlignment="Left"/>
             </StackPanel>
             
 

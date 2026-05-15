@@ -29,7 +29,15 @@
         <Setter Property="FontSize" Value="22"/>
         <Setter Property="Foreground" Value="{DynamicResource TextPrimary}"/>
     </Style>
+    <Style x:Key="kpi-title" TargetType="Label">
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextPrimary}"/>
+    </Style>
+    <Style x:Key="kpi-paragraph" TargetType="Label">
+        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextParagraph}"/>
+    </Style>
 
-    
+
 
 </ResourceDictionary>

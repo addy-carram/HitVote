@@ -10,6 +10,62 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\Singers\adele.jpg" />
+    <None Remove="Images\Singers\ariana_grande.jpg" />
+    <None Remove="Images\Singers\beyonce.jpg" />
+    <None Remove="Images\Singers\billie_eilish.jpg" />
+    <None Remove="Images\Singers\bruno_mars.jpg" />
+    <None Remove="Images\Singers\drake.jpg" />
+    <None Remove="Images\Singers\dua_lipa.jpg" />
+    <None Remove="Images\Singers\ed_sheeran.jpg" />
+    <None Remove="Images\Singers\harry_styles.jpg" />
+    <None Remove="Images\Singers\justin_bieber.jpg" />
+    <None Remove="Images\Singers\lady_gaga.jpg" />
+    <None Remove="Images\Singers\olivia_rodrigo.jpg" />
+    <None Remove="Images\Singers\post_malone.jpg" />
+    <None Remove="Images\Singers\taylor_swift.jpg" />
+    <None Remove="Images\Singers\the_weeknd.jpg" />
+    <None Remove="Images\Songs\7_rings.jpg" />
+    <None Remove="Images\Songs\adore_you.jpg" />
+    <None Remove="Images\Songs\anti_hero.jpg" />
+    <None Remove="Images\Songs\bad_guy.jpg" />
+    <None Remove="Images\Songs\bad_habits.jpg" />
+    <None Remove="Images\Songs\bad_romance.jpg" />
+    <None Remove="Images\Songs\blinding_lights.jpg" />
+    <None Remove="Images\Songs\brutal.jpg" />
+    <None Remove="Images\Songs\circles.jpg" />
+    <None Remove="Images\Songs\crazy_in_love.jpg" />
+    <None Remove="Images\Songs\dont_start_now.jpg" />
+    <None Remove="Images\Songs\drivers_license.jpg" />
+    <None Remove="Images\Songs\easy_on_me.jpg" />
+    <None Remove="Images\Songs\gods_plan.jpg" />
+    <None Remove="Images\Songs\good_4_u.jpg" />
+    <None Remove="Images\Songs\grenade.jpg" />
+    <None Remove="Images\Songs\halo.jpg" />
+    <None Remove="Images\Songs\happier_than_ever.jpg" />
+    <None Remove="Images\Songs\hello.jpg" />
+    <None Remove="Images\Songs\hotline_bling.jpg" />
+    <None Remove="Images\Songs\levitating.jpg" />
+    <None Remove="Images\Songs\love_story.jpg" />
+    <None Remove="Images\Songs\love_yourself.jpg" />
+    <None Remove="Images\Songs\one_dance.jpg" />
+    <None Remove="Images\Songs\peaches.jpg" />
+    <None Remove="Images\Songs\perfect.jpg" />
+    <None Remove="Images\Songs\poker_face.jpg" />
+    <None Remove="Images\Songs\positions.jpg" />
+    <None Remove="Images\Songs\rockstar.jpg" />
+    <None Remove="Images\Songs\rolling_in_the_deep.jpg" />
+    <None Remove="Images\Songs\save_your_tears.jpg" />
+    <None Remove="Images\Songs\shake_it_off.jpg" />
+    <None Remove="Images\Songs\shape of you.jpg" />
+    <None Remove="Images\Songs\shape_of_you.jpg" />
+    <None Remove="Images\Songs\single_ladies.jpg" />
+    <None Remove="Images\Songs\someone_like_you.jpg" />
+    <None Remove="Images\Songs\sorry.jpg" />
+    <None Remove="Images\Songs\sunflower.jpg" />
+    <None Remove="Images\Songs\thank_u_next.jpg" />
+    <None Remove="Images\Songs\uptown_funk.jpg" />
+    <None Remove="Images\Songs\watermelon_sugar.jpg" />
     <None Remove="Views\logo.png" />
     <None Remove="Views\MainPanel\ep_setting.png" />
     <None Remove="Views\MainPanel\home.png" />
@@ -23,12 +79,70 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\Singers\adele.jpg" />
+    <Resource Include="Images\Singers\ariana_grande.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.8" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\Singers\beyonce.jpg" />
+    <Resource Include="Images\Singers\billie_eilish.jpg" />
+    <Resource Include="Images\Singers\bruno_mars.jpg" />
+    <Resource Include="Images\Singers\drake.jpg" />
+    <Resource Include="Images\Singers\dua_lipa.jpg" />
+    <Resource Include="Images\Singers\ed_sheeran.jpg" />
+    <Resource Include="Images\Singers\harry_styles.jpg" />
+    <Resource Include="Images\Singers\justin_bieber.jpg" />
+    <Resource Include="Images\Singers\lady_gaga.jpg" />
+    <Resource Include="Images\Singers\olivia_rodrigo.jpg" />
+    <Resource Include="Images\Singers\post_malone.jpg" />
+    <Resource Include="Images\Singers\taylor_swift.jpg" />
+    <Resource Include="Images\Singers\the_weeknd.jpg" />
+    <Resource Include="Images\Songs\7_rings.jpg" />
+    <Resource Include="Images\Songs\adore_you.jpg" />
+    <Resource Include="Images\Songs\anti_hero.jpg" />
+    <Resource Include="Images\Songs\bad_guy.jpg" />
+    <Resource Include="Images\Songs\bad_habits.jpg" />
+    <Resource Include="Images\Songs\bad_romance.jpg" />
+    <Resource Include="Images\Songs\blinding_lights.jpg" />
+    <Resource Include="Images\Songs\brutal.jpg" />
+    <Resource Include="Images\Songs\circles.jpg" />
+    <Resource Include="Images\Songs\crazy_in_love.jpg" />
+    <Resource Include="Images\Songs\dont_start_now.jpg" />
+    <Resource Include="Images\Songs\drivers_license.jpg" />
+    <Resource Include="Images\Songs\easy_on_me.jpg" />
+    <Resource Include="Images\Songs\gods_plan.jpg" />
+    <Resource Include="Images\Songs\good_4_u.jpg" />
+    <Resource Include="Images\Songs\grenade.jpg" />
+    <Resource Include="Images\Songs\halo.jpg" />
+    <Resource Include="Images\Songs\happier_than_ever.jpg" />
+    <Resource Include="Images\Songs\hello.jpg" />
+    <Resource Include="Images\Songs\hotline_bling.jpg" />
+    <Resource Include="Images\Songs\levitating.jpg" />
+    <Resource Include="Images\Songs\love_story.jpg" />
+    <Resource Include="Images\Songs\love_yourself.jpg" />
+    <Resource Include="Images\Songs\one_dance.jpg" />
+    <Resource Include="Images\Songs\peaches.jpg" />
+    <Resource Include="Images\Songs\perfect.jpg" />
+    <Resource Include="Images\Songs\poker_face.jpg" />
+    <Resource Include="Images\Songs\positions.jpg" />
+    <Resource Include="Images\Songs\rockstar.jpg" />
+    <Resource Include="Images\Songs\rolling_in_the_deep.jpg" />
+    <Resource Include="Images\Songs\save_your_tears.jpg" />
+    <Resource Include="Images\Songs\shake_it_off.jpg" />
+    <Resource Include="Images\Songs\shape_of_you.jpg" />
+    <Resource Include="Images\Songs\single_ladies.jpg" />
+    <Resource Include="Images\Songs\someone_like_you.jpg" />
+    <Resource Include="Images\Songs\sorry.jpg" />
+    <Resource Include="Images\Songs\sunflower.jpg" />
+    <Resource Include="Images\Songs\thank_u_next.jpg" />
+    <Resource Include="Images\Songs\uptown_funk.jpg" />
+    <Resource Include="Images\Songs\watermelon_sugar.jpg" />
     <Resource Include="Views\Login\logo.png" />
     <Resource Include="Views\MainPanel\ep_setting.png" />
     <Resource Include="Views\MainPanel\home.png" />

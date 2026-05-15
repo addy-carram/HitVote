@@ -8,11 +8,11 @@
 
         <!-- Round Avatar -->
         <Border Width="80" Height="80" 
-                CornerRadius="40" 
+                CornerRadius="100"
                 ClipToBounds="True"
                 HorizontalAlignment="Center">
             <Image Source="{Binding ImageSource, ElementName=root}" 
-                   Stretch="UniformToFill"/>
+                   Stretch="UniformToFill"  />
         </Border>
 
         <!-- Singer Name -->

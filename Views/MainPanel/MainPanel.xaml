@@ -44,6 +44,13 @@
                     <Label Content="Raport" HorizontalAlignment="Left" Style="{StaticResource nav}" Margin="10,0,0,0"/>
                 </StackPanel>
             </Button>
+            <Button x:Name="artists" Background="{x:Null}" Padding="40,5,5,5" Height="81" HorizontalContentAlignment="Left" BorderBrush="{x:Null}" Click="person_Copy_Click">
+                <StackPanel x:Name="person_context1" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
+                    <Image Height="32" Width="32" Source="/Views/MainPanel/person.png"/>
+                    <Label Content="Artists" HorizontalAlignment="Left" Style="{StaticResource nav}" Margin="10,0,0,0"/>
+
+                </StackPanel>
+            </Button>
         </StackPanel>
         <StackPanel x:Name="nav_bar" VerticalAlignment="Top" Height="100" Width="1140" Orientation="Horizontal" HorizontalAlignment="Right">
             <TextBox Style="{StaticResource InputBox}" TextWrapping="Wrap" Text="TextBox" Width="240" VerticalAlignment="Center" Margin="100,0,300,0"/>

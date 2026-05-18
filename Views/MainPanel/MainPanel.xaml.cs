@@ -1,5 +1,6 @@
 ﻿using HitVote.Views.MainPanel.Home;
 using HitVote.Views.MainPanel.Vote;
+using HitVote.Views.MainPanel.Artist;   
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,6 +37,11 @@ namespace HitVote.Views.MainPanel
         {
             MainContent.Content = new VoteView();
 
+        }
+
+        private void person_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = new ArtistView();
         }
     }
 }

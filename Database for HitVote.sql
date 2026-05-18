@@ -327,3 +327,10 @@ UPDATE Song SET image_path = '/Images/Songs/sorry.jpg'               WHERE id_so
 UPDATE Song SET image_path = '/Images/Songs/peaches.jpg'             WHERE id_song = 38;
 UPDATE Song SET image_path = '/Images/Songs/bad_romance.jpg'         WHERE id_song = 39;
 UPDATE Song SET image_path = '/Images/Songs/poker_face.jpg'          WHERE id_song = 40;
+
+
+
+SELECT Count(*) as votes, SUM(points) as puncte, id_form FROM Vote
+Group by id_form
+
+Select * from Song

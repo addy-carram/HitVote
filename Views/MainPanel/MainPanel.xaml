@@ -6,11 +6,11 @@
         xmlns:local="clr-namespace:HitVote.Views.MainPanel"
         mc:Ignorable="d"
         Title="MainPanel" Height="700" Width="1440">
-    <Grid Background="{DynamicResource BackgroundColor}">
-        <StackPanel x:Name="panelElemets" Width="300" HorizontalAlignment="Left" Background="{DynamicResource BackgroundCard}">
+    <Grid x:Name="MainWindow" Background="{DynamicResource BackgroundColor}">
+        <StackPanel x:Name="panelElemets" Width="300" HorizontalAlignment="Left" Background="{DynamicResource BackgroundCard}" Margin="-5,0,0,0">
             <Image Height="64" Width="64" Source="/Views/MainPanel/logo.png" Margin="40,44,40,40" HorizontalAlignment="Left"/>
             <Button x:Name="home" Background="{x:Null}" Padding="40,5,5,5" Height="81" HorizontalContentAlignment="Left" BorderBrush="{x:Null}"
-                     MouseLeftButtonDown="Home_Click" Cursor="Hand">
+                     MouseLeftButtonDown="Home_Click" Cursor="Hand" Click="Home_Click">
                 <StackPanel x:Name="home_context" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
                     <Image Height="32" Width="32" Source="/Views/MainPanel/home.png"/>
                     <Label Content="Home" HorizontalAlignment="Left" Style="{StaticResource nav}" Margin="10,0,0,0"/>
@@ -24,26 +24,6 @@
 
                 </StackPanel>
             </Button>
-            <Button x:Name="person" Background="{x:Null}" Padding="40,5,5,5" Height="81" HorizontalContentAlignment="Left" BorderBrush="{x:Null}">
-                <StackPanel x:Name="person_context" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
-                    <Image Height="32" Width="32" Source="/Views/MainPanel/person.png"/>
-                    <Label Content="Person" HorizontalAlignment="Left" Style="{StaticResource nav}" Margin="10,0,0,0"/>
-
-                </StackPanel>
-            </Button>
-            <Button x:Name="music" Background="{x:Null}" Padding="40,5,5,5" Height="81" HorizontalContentAlignment="Left" BorderBrush="{x:Null}">
-                <StackPanel x:Name="music_context" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
-                    <Image Height="32" Width="32" Source="/Views/MainPanel/music.png"/>
-                    <Label Content="Music" HorizontalAlignment="Left" Style="{StaticResource nav}" Margin="10,0,0,0"/>
-
-                </StackPanel>
-            </Button>
-            <Button x:Name="raport" Background="{x:Null}" Padding="40,5,5,5" Height="81" HorizontalContentAlignment="Left" BorderBrush="{x:Null}">
-                <StackPanel x:Name="raport_context" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
-                    <Image Height="32" Width="32" Source="/Views/MainPanel/report.png"/>
-                    <Label Content="Raport" HorizontalAlignment="Left" Style="{StaticResource nav}" Margin="10,0,0,0"/>
-                </StackPanel>
-            </Button>
             <Button x:Name="artists" Background="{x:Null}" Padding="40,5,5,5" Height="81" HorizontalContentAlignment="Left" BorderBrush="{x:Null}" Click="person_Copy_Click">
                 <StackPanel x:Name="person_context1" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
                     <Image Height="32" Width="32" Source="/Views/MainPanel/person.png"/>
@@ -51,19 +31,47 @@
 
                 </StackPanel>
             </Button>
+            <Button x:Name="music" Background="{x:Null}" Padding="40,5,5,5" Height="81" HorizontalContentAlignment="Left" BorderBrush="{x:Null}" Click="music_Click">
+                <StackPanel x:Name="music_context" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
+                    <Image Height="32" Width="32" Source="/Views/MainPanel/music.png"/>
+                    <Label Content="Music" HorizontalAlignment="Left" Style="{StaticResource nav}" Margin="10,0,0,0"/>
+
+                </StackPanel>
+            </Button>
+            <Button x:Name="person" Background="{x:Null}" Padding="40,5,5,5" Height="81" HorizontalContentAlignment="Left" BorderBrush="{x:Null}" Click="person_Click">
+                <StackPanel x:Name="person_context" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
+                    <Image Height="32" Width="32" Source="/Views/MainPanel/person.png"/>
+                    <Label Content="Person" HorizontalAlignment="Left" Style="{StaticResource nav}" Margin="10,0,0,0"/>
+
+                </StackPanel>
+            </Button>
+            <Button x:Name="raport" Background="{x:Null}" Padding="40,5,5,5" Height="81" HorizontalContentAlignment="Left" BorderBrush="{x:Null}" Click="raport_Click">
+                <StackPanel x:Name="raport_context" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
+                    <Image Height="32" Width="32" Source="/Views/MainPanel/report.png"/>
+                    <Label Content="Raport" HorizontalAlignment="Left" Style="{StaticResource nav}" Margin="10,0,0,0"/>
+                </StackPanel>
+            </Button>
         </StackPanel>
         <StackPanel x:Name="nav_bar" VerticalAlignment="Top" Height="100" Width="1140" Orientation="Horizontal" HorizontalAlignment="Right">
-            <TextBox Style="{StaticResource InputBox}" TextWrapping="Wrap" Text="TextBox" Width="240" VerticalAlignment="Center" Margin="100,0,300,0"/>
+            <TextBox Style="{StaticResource InputBox}" TextWrapping="Wrap" Text="TextBox" Width="240" VerticalAlignment="Center" Margin="100,0,200,0"/>
             <StackPanel x:Name="user_elemets" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="200.4,0,0,0">
                 <StackPanel x:Name="notification" Orientation="Horizontal">
                     <Image Height="32" Width="32" Source="/Views/MainPanel/ep_setting.png"/>
                     <Image Height="32" Width="32" Source="/Views/MainPanel/notification.png" Margin="10,0,0,0"/>
                 </StackPanel>
-                <StackPanel x:Name="___account_" Orientation="Horizontal" Height="100" Margin="30,0,0,0">
-                    <Image Height="48" Width="48" Source="/Views/MainPanel/user1.jpg"/>
-                    <Label Content="Account" Style="{StaticResource nav}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0"/>
-                </StackPanel>
             </StackPanel>
+            <Button x:Name="account" Background="{x:Null}" Padding="5,5,5,5" HorizontalContentAlignment="Left" BorderBrush="{x:Null}"
+                MouseLeftButtonDown="Account_Click" Cursor="Hand" Click="Account_Click" VerticalAlignment="Center">
+                <StackPanel x:Name="home_context1" Width="NaN" Orientation="Horizontal" Margin="10,10,10,10">
+                    <Border CornerRadius="100" Height="64" Width="64">
+                        <Border.Background>
+                            <ImageBrush ImageSource="/Views/MainPanel/user1.jpg" Stretch="UniformToFill"/>
+                        </Border.Background>
+                    </Border>
+                    <Label Content="Account" HorizontalAlignment="Left" Style="{StaticResource nav}" Margin="10,0,0,0" VerticalAlignment="Center"/>
+
+                </StackPanel>
+            </Button>
         </StackPanel>
         <Grid HorizontalAlignment="Right" VerticalAlignment="Top" Height="485" Width="1135" Margin="0,129,0,0"/>
 

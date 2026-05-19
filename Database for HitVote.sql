@@ -333,4 +333,6 @@ UPDATE Song SET image_path = '/Images/Songs/poker_face.jpg'          WHERE id_so
 SELECT Count(*) as votes, SUM(points) as puncte, id_form FROM Vote
 Group by id_form
 
-Select * from Song
+Select * from Song s
+JOIN FORM F ON F.id_song=s.id_song
+JOIN Singer si ON si.id_singer=s.id_song

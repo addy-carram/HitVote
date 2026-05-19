@@ -24,9 +24,14 @@
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <controls:SongCard
-                            Title="{Binding name_song}"
-                            Artist="{Binding image_path}"
-                            ImageSource="{Binding image_path}"/>
+                        Title="{Binding SongName}"
+                        Artist="{Binding SingerName}"
+                        ImageSource="{Binding SongImage}"
+                        Duration="{Binding DurationFormatted}"
+                        Date="{Binding DateLog, StringFormat=dd/MM/yyyy}"
+                        Active="{Binding status}"
+                        TotalPoints="{Binding TotalPoints}"
+                        VoteCount="{Binding VoteCount}"/>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>

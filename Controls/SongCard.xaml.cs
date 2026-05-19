@@ -15,6 +15,33 @@ namespace HitVote.Controls
         public static readonly DependencyProperty ImageSourceProperty =
             DependencyProperty.Register("ImageSource", typeof(string), typeof(SongCard));
 
+        public static readonly DependencyProperty DurationProperty =
+            DependencyProperty.Register("Duration", typeof(string), typeof(SongCard));
+
+        public static readonly DependencyProperty DateProperty =
+            DependencyProperty.Register("Date", typeof(string), typeof(SongCard));
+
+        
+        public static readonly DependencyProperty ActiveProperty =
+            DependencyProperty.Register("Active", typeof(string), typeof(SongCard));
+        public static readonly DependencyProperty TotalPointsProperty =
+    DependencyProperty.Register("TotalPoints", typeof(int), typeof(SongCard));
+
+        public static readonly DependencyProperty VoteCountProperty =
+            DependencyProperty.Register("VoteCount", typeof(int), typeof(SongCard));
+
+        public int TotalPoints
+        {
+            get => (int)GetValue(TotalPointsProperty);
+            set => SetValue(TotalPointsProperty, value);
+        }
+
+        public int VoteCount
+        {
+            get => (int)GetValue(VoteCountProperty);
+            set => SetValue(VoteCountProperty, value);
+        }
+
         public string Title
         {
             get => (string)GetValue(TitleProperty);
@@ -30,7 +57,22 @@ namespace HitVote.Controls
             get => (string)GetValue(ImageSourceProperty);
             set => SetValue(ImageSourceProperty, value);
         }
-
+        public string Duration
+        {
+            get => (string)GetValue(DurationProperty);
+            set => SetValue(DurationProperty, value);
+        }
+        public string Date
+        {
+            get => (string)GetValue(DateProperty);
+            set => SetValue(DateProperty, value);
+        }
+       
+        public string Active
+        {
+            get => (string)GetValue(ActiveProperty);
+            set => SetValue(ActiveProperty, value);
+        }
         public SongCard() => InitializeComponent();
     }
 }
